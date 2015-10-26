@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Matthew Cramer's Portfolio.</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <p> Hello there! My name is Matthew Cramer and I am a recent Western Oregon University graduate seeking a future developing the web. I currently do a little freelance and side projects I will use this to showcase them, as well as reports and statistical analysis. Contact information links are available everywhere. Thanks for stopping by!</p>
+    </div>
+    <div class="jumbotron">
+        <h2>Web Development</h2>
+        <p> Here are some projects that showcase some of my web development experience. Have experience in ASP.NET, Wordpress, Ruby on Rails, and others.</p>
+        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+        <div class="list-group-horizontal">
+            <a href="DiscreteConcrete.com" class="list-group-item">
+                DiscreteConcrete - Pacific Coast Concrete Contracting firm.
+            </a>
+            <a href="#" class="list-group-item">
+                Dapibus ac facilisis in
+            </a>
+            <a href="#" class="list-group-item">
+                Morbi leo risus
+            </a>
+        </div>
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Matthew Cramer's Portfolio</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
